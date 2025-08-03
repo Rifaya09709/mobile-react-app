@@ -28,7 +28,7 @@ export default function Sales({ searchTerm, selectedPhones, handleAdd }) {
 
   return (
     <section className="py-10 px-4 md:px-16 bg-gray-100" id="sales">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800" data-aos="fade-up">
+      <h2 className="text-3xl font-bold text-center mt-1 mb-10 text-gray-800" data-aos="fade-up">
         🔥 Phones on Sale
       </h2>
 

@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaShoppingCart, FaSearch, FaTrash } from "react-icons/fa";

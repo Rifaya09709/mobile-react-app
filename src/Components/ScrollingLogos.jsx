@@ -35,7 +35,7 @@ export default function ScrollingLogos() {
     <div className="w-full bg-white py-4">
       {/* Header Title */}
       <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">
-        📱 Our Top Phone Brands
+        📱 Our Top Phone Logos
       </h2>
 
       {/* Scrolling Logos */}

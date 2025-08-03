@@ -34,31 +34,39 @@ export default function Hero() {
   ];
 
   return (
-    <section className="bg-white py-10 px-4 md:px-16">
-      {/* 🔄 Scrollable Phone Image Section */}
-      <div className="overflow-x-auto flex gap-6 pb-4 border-b border-gray-200 mb-8 scrollbar-hide">
+    <section className="bg-white py-12 px-4 md:px-16 mt-28">
+      {/* 🔥 Heading */}
+      <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 text-center mb-8">
+        🔥 Explore Top Brands
+      </h2>
+
+      {/* 🔄 Scrollable Phone Logos */}
+      <div className="overflow-x-auto flex gap-6 pb-6 border-b border-gray-200 mb-12 no-scrollbar">
         {phones.map((phone) => (
-          <div key={phone.id} className="flex-shrink-0 w-[200px] text-center">
-            <div className="text-sm text-gray-500 mb-1">ID: {phone.id}</div>
+          <div key={phone.id} className="flex-shrink-0 w-[180px] text-center">
+            <div className="text-xs text-gray-500 mb-1">#{phone.id}</div>
             <img
               src={phone.image}
               alt={phone.name}
-              className="w-[180px] h-[180px] object-contain rounded-xl shadow hover:scale-105 transition-transform duration-300 mx-auto"
+              className="w-[180px] h-[180px] object-contain rounded-xl shadow-md hover:scale-105 transition-transform duration-300 mx-auto"
             />
-            <p className="mt-2 font-medium text-gray-800">{phone.name}</p>
+            <p className="mt-2 text-sm font-medium text-gray-700">
+              {phone.name}
+            </p>
           </div>
         ))}
       </div>
 
-      {/* 🎯 Hero Text Section */}
-      <div className="text-center space-y-4">
-        <h1 className="text-3xl md:text-5xl font-bold text-blue-600">
+      {/* 🌟 Hero Message */}
+      <div className="text-center space-y-5">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-700">
           Discover Your Next Smartphone
         </h1>
         <p className="text-gray-600 text-lg max-w-xl mx-auto">
-          Browse the latest phones with powerful features and great deals. Shop smart and stay ahead.
+          Browse the latest phones with powerful features and great deals. Shop
+          smart and stay ahead.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-lg transition">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition">
           Shop Now
         </button>
       </div>
