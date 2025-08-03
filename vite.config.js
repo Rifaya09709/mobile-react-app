@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "./",
   plugins: [react()],
-  base:process.env.VITE-BASE-PATH ||"/mobile-react-app"
+
 })
